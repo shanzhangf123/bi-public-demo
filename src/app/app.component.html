@@ -1,0 +1,13 @@
+<button (click)="isShowCalendar = !isShowCalendar">
+  {{isShowCalendar?'隐藏':'显示'}}BI日历
+</button>
+
+<button (click)="showAlertDialog()">
+  弹出加好友弹出窗
+</button>
+
+<button (click)="showAddDailog()">
+  弹窗警告框
+</button>
+
+<app-bi-calendar *ngIf="isShowCalendar"></app-bi-calendar>
